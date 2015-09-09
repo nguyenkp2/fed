@@ -144,7 +144,7 @@ void setup()
 
   Serial.println(F("Card initialized."));
 
-  dataFile = SD.open("PELLETJuly.csv", FILE_WRITE);
+  dataFile = SD.open(FILENAME, FILE_WRITE);
   if (! dataFile) {
     Serial.println(F("Error opening datalog.txt"));
     // Wait forever since we cant write data
